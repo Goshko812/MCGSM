@@ -56,6 +56,10 @@ init_environment() {
         bash -c "source /root/.sdkman/bin/sdkman-init.sh && sdk install java 21.0.2-amzn"
         
         echo "Environment setup complete!"
+        echo "Please change the forwarding.secret found in:"
+        echo "persistent-storage-folder/mc-server/velocity/forwarding.secret"
+        echo "persistent-storage-folder/mc-server/limbo/settings.yml"
+        echo "persistent-storage-folder/mc-server/server/config/paper-global.yml under the velocity section"
     '
     
     if [ $? -eq 0 ]; then
