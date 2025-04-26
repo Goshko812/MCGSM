@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  ubuntu:
+    image: ubuntu:latest
+    container_name: pmc-server
+    stdin_open: true
+    tty: true
+
+    ports:
+      - "25565:25565"
+
+    volumes:
+      - ./persistent-storage-folder:/data
+    command: bash
