@@ -1,0 +1,21 @@
+[Unit]
+Description=Persistent Reverse SSH Tunnel for Minecraft (with Password)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Environment="AUTOSSH_GATETIME=0"
+ExecStart=/usr/bin/sshpass -p <VPS_ROOT_PASSWORD> /usr/bin/autossh \
+  -M 0 \
+  -N \
+  -o ServerAliveInterval=30 \
+  -o ServerAliveCountMax=3 \
+  -o StrictHostKeyChecking=no \
+  -o UserKnownHostsFile=/dev/null \
+  -R 0.0.0.0:25565:localhost:25565 \
+  root@<VPS_IP>
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
