@@ -51,6 +51,8 @@ Open the `mc-reverse-tunnel.service` file and replace:
 
 > **Note:** If you use a different port for the SSH connection, add `-p <port> \` after `-M 0 \`.
 
+After that move it to `/etc/systemd/system/`
+
 ---
 
 ## 4. Enable & Start the Service
