@@ -15,7 +15,7 @@ git clone https://github.com/Goshko812/MCGSM
 ```
 2. Enter the directory and make the script executable:
 ```bash
-cd EaglerServerXVelocity && chmod +x script.sh
+cd MCGSM && chmod +x script.sh
 ```
 3. Run the script to initialize the environment:
 ```bash
