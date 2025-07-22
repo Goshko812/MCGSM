@@ -1,11 +1,19 @@
 # MCGSM
-Scripts to get your Minecraft 1.21.4 Server up and running without a hassle
+Scripts to get your Minecraft 1.21.8 Server up and running without a hassle
 The script initializes a Docker environment and setups everything necessary to run the velocity, limbo, and Minecraft server.
 The script also supports making backups, which can and should be automated using [crontab](https://crontab.guru/).
 
 ![trash code](https://img.shields.io/badge/code-trash%20🗑️-red)
 ![works](https://img.shields.io/badge/works-on%20my%20machine-brightgreen)
 ![bash magic](https://img.shields.io/badge/powered%20by-bash%20and%20hope-yellow)
+
+### This Script Deploys:
+- PaperMC Minecraft Server 1.21.8
+- NanoLimbo Instance
+- nLogin for user authentication
+- Velocity for proxy
+- SkinsRestorer for having skins
+- ViaVersion for connecting to the NanoLimbo instance
 
 ### Setup
 
